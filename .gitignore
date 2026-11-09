@@ -1,0 +1,14 @@
+# Maven
+target/
+
+# Node
+node_modules/
+
+# Relatórios gerados
+newman/
+serverest.log
+
+# IDE
+.idea/
+.vscode/
+*.iml

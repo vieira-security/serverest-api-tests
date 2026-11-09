@@ -1,0 +1,14 @@
+{
+  "name": "serverest-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Coleção Postman da ServeRest executada via Newman + ServeRest local para os testes",
+  "scripts": {
+    "api:start": "serverest --nodoc",
+    "test:postman": "newman run postman/ServeRest.postman_collection.json -e postman/ServeRest-local.postman_environment.json --reporters cli,junit --reporter-junit-export newman/report.xml"
+  },
+  "devDependencies": {
+    "newman": "^6.2.3",
+    "serverest": "^3.2.2"
+  }
+}
